@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to top, #95c9ed, #ffffff); /* ✅ Chat과 동일한 배경 */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 상단 로고 */
+.logo {
+  position: absolute;
+  top: 4.78%;
+  left: 2.5%;
+  width: 150px;
+  height: auto;
+}
+
+/* 제목 스타일 */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* 페르소나 선택 영역 */
+.personas {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.personaCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.personaCard img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personaCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.personaCard p {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}

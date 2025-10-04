@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  /* 🌈 그라데이션 배경 */
+  background: linear-gradient(to top, #95c9ed, #ffffff);
+
+  position: relative; /* hand 배치용 */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 헤더 */
+.header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 4.78%;       /* 상단 여백 비율 */
+  left: 2.5%;       /* 좌측 여백 비율 */
+  width: 150px;     /* 적당히 줄여서 */
+  height: auto;
+}
+
+/* 메인 텍스트 */
+.main h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.main p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+
+.searchBox {
+  position: absolute;
+  bottom: 80px;   /* 화면 하단에서부터 간격 */
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 845px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.searchBox input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.searchBox button {
+  width: 80px; /* 버튼 자체 폭 확보 */
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox button img {
+  width: 22px;
+  height: 22px;
+}
+
+/* 로봇 손 */
+.hand {
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  width: 586px;
+  height: 573px;
+  pointer-events: none;
+}
